@@ -14,3 +14,14 @@ function latLong(cityName) {
         })
 }
 
+function fetchWeather(lat, lon){
+    var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&appid=b0ff1a0be60643d1e77c3f09ef10d55b';
+    fetch(requestURL)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        displayWeather(data)
+    })
+}
