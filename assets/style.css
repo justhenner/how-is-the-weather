@@ -1,0 +1,55 @@
+header {
+    background-color: rgb(6, 170, 148);
+    color: white;
+    text-align: center;
+}
+
+main {
+    margin-left: 25px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#weather{
+    display: flex;
+    flex-direction: column;
+    margin-left: 550px;
+}
+
+#cityname {
+    margin-bottom: 20px;
+}
+
+#forecast {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#future {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 800px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.future-date {
+    color: white;
+    background-color: rgb(215, 155, 2);
+    margin-left:50px;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#buttonOne{
+    display: contents;
+    background-color: aqua;
+}
