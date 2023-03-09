@@ -114,7 +114,7 @@ function getWeather() {
   const city = document.getElementById("city");
     console.log(city.value)
     // save to localstorage
-    // check if values are present in locakstorage
+    // check if values are present in localstorage
     if (localStorage.getItem('cities')) {
         // grab that value from localstorage
         var cities = localStorage.getItem('cities')
