@@ -45,6 +45,9 @@ function displayWeather(lat, lon) {
       .then(function (data) {
         console.log(data);
         var weather = document.getElementById("weather");
+        // clear
+        weather.innerHTML = "";
+        
         var headingEl = document.createElement('h1');
         var tempEl = document.createElement('p');
         var windEl = document.createElement('p');
