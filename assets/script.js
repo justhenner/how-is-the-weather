@@ -1,5 +1,5 @@
 function latLong(cityName){
-    var requestUrl = 'http://api.openweathermap.org/geo/1.0/direct?q='+cityName+'&limit=5&appid=b0ff1a0be60643d1e77c3f09ef10d55b';
+    var requestUrl = 'https://api.openweathermap.org/geo/1.0/direct?q='+cityName+'&limit=5&appid=b0ff1a0be60643d1e77c3f09ef10d55b';
     fetch(requestUrl)
     .then(function (response) {
         return response.json();
@@ -47,7 +47,7 @@ function displayWeather(lat, lon) {
         var weather = document.getElementById("weather");
         // clear
         weather.innerHTML = "";
-        
+
         var headingEl = document.createElement('h1');
         var tempEl = document.createElement('p');
         var windEl = document.createElement('p');
